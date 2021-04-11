@@ -5,7 +5,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
-var time = "yellow"
+var time;
 function preload()
 {
 	
@@ -62,6 +62,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   getTime();
+  if(time)
   background(time);
   ground1.display();
   ground2.display();
