@@ -102,7 +102,7 @@ function draw() {
  
 }
 async function getTime() {
-var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+var response=await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
 var response2=await response.json();
 //console.log(response2);
 var dt=response2.datetime;
