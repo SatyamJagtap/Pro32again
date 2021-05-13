@@ -8,7 +8,7 @@ const Constraint = Matter.Constraint;
 var time;
 function preload()
 {
-	
+	getTime();
 }
 
 function setup() {
@@ -61,7 +61,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  getTime();
+  
   if(time)
   background(time);
   ground1.display();
